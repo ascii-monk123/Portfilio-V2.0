@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap");
+@import "./modules/all";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Share Tech Mono", monospace;
+}
