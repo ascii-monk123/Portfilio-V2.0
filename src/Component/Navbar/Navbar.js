@@ -3,7 +3,7 @@ import Profile from "../../assets/img/my-image.jpg";
 import BlueBtn from "../UI/BlueBtn";
 import Fade from "react-reveal/Fade";
 import Jello from "react-reveal/Jello";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navbar = (props) => {
   return (
@@ -75,10 +75,9 @@ const Navbar = (props) => {
               smooth={true}
               offset={-70}
               duration={500}
+              className="nav-link"
             >
-              <a href="#" className="nav-link">
-                Contact
-              </a>
+              <a href="#">Contact</a>
             </Link>
           </li>
         </ul>

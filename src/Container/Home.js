@@ -13,11 +13,10 @@ import {
 } from "react-icons/fa";
 import ProfileImg from "../assets/img/my-image.jpg"; //importing the image
 import Zoom from "react-reveal/Zoom";
-import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
 import RubberBand from "react-reveal/RubberBand";
 import Roll from "react-reveal/Roll";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import Project from "../Component/Project/Project";
 //styles for the header and the background
@@ -237,7 +236,11 @@ const Home = () => {
                 </span>
                 aahancharak@gmail.com
               </a>
-              <a href="https://github.com/pokemonTrainer5833" target="_blank">
+              <a
+                href="https://github.com/pokemonTrainer5833"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <span>
                   <FaGithub />
                 </span>
@@ -246,6 +249,7 @@ const Home = () => {
               <a
                 href="https://www.linkedin.com/in/aahan-singh-charak-966a23191/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span>
                   {" "}
@@ -328,12 +332,17 @@ const Home = () => {
             <br />
             <br />
             <div className="footer-links soc-links">
-              <a href="https://github.com/pokemonTrainer5833" target="_blank">
+              <a
+                href="https://github.com/pokemonTrainer5833"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
               <a
                 href="https://www.linkedin.com/in/aahan-singh-charak-966a23191/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaLinkedin />
               </a>
