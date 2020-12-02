@@ -1,7 +1,17 @@
 @import "./colors";
+//importing the border radius animation
+@import "../mixins/shadowAnimation";
+
 .home {
   width: 100%;
   color: $color-purple;
+  background-position: center;
+  background-attachment: fixed;
+}
+.gradient-hr {
+  height: 2px;
+  width: 100%;
+  margin-top: 6rem;
 }
 .home-header {
   width: 100%;
@@ -25,7 +35,7 @@
     margin-top: 2rem;
     font-size: 4rem;
     text-align: center;
-    background-image: linear-gradient(to right, $color-orange, $color-purple);
+
     -webkit-background-clip: text;
     color: transparent;
     text-transform: capitalize;
@@ -62,7 +72,66 @@
     }
   }
 }
+//scss common for all sections
+.intro-section,
+.services-section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: $color-black-light;
+}
 
+//the intro section inside the home section
+.intro-section {
+  background-color: $color-black-light;
+  padding-top: 10rem;
+  //the profile image
+  .circle-image {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    @include setColorAnimation;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  //the about me paragraph
+  .about-me {
+    padding-left: 1rem;
+    h1 {
+      color: $color-grey-light;
+      font-size: 5rem;
+      span {
+        transform: rotate(-45deg);
+      }
+    }
+    p {
+      color: $color-white;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .transX {
+    transform: translateY(-5rem);
+  }
+  .intro-section {
+    padding-top: 3rem;
+    .img-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .about-me {
+      margin: 4rem 0;
+    }
+  }
+}
 @media (max-width: 600px) {
   .home-message {
     width: 90%;
@@ -79,5 +148,13 @@
   }
   .blue-button {
     font-size: 1.2rem;
+  }
+  .about-me {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem !important;
+    }
   }
 }

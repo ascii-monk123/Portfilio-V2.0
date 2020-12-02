@@ -4,6 +4,20 @@
 @import "../partials/headerLogo";
 @import "../partials/container";
 
+//module imports
+@import "../modules/gradients";
+
 //#importing the buttons
 @import "../partials/buttons";
+
+//margin imports
 @import "../partials/margins";
+
+//import utils
+@import "../utils/wrapper";
+
+//mixin imports
+@import "../mixins/grid";
+
+//links import
+@import "./links";

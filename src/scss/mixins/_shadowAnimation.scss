@@ -1,0 +1,24 @@
+@import "../modules/colors";
+@mixin setColorAnimation {
+  animation-name: shadowAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0 20px 40px 0 rgba(0, 255, 255, 0.5);
+  }
+  25% {
+    box-shadow: 0 20px 40px 0 rgba($color-purple, 0.5);
+  }
+  50% {
+    box-shadow: 0 20px 40px 0 rgba(yellow, 0.3);
+  }
+  75% {
+    box-shadow: 0 20px 40px 0 rgba($color-orange, 0.5);
+  }
+  100% {
+    box-shadow: 0 20px 40px 0 rgba(0, 255, 255, 0.5);
+  }
+}

@@ -1,0 +1,9 @@
+@import "./colors";
+.blue-link {
+  text-decoration: none;
+  color: $color-blue;
+  transition: color 0.5s;
+  &:hover {
+    color: $color-brown;
+  }
+}

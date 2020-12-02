@@ -1,0 +1,50 @@
+@mixin grid($columns, $row) {
+  @if $row==0 {
+    grid-template-columns: repeat($columns, 1fr);
+  }
+  @if $columns==0 {
+    grid-template-rows: repeat($rows, 1fr);
+  }
+}
+
+.grid {
+  display: grid;
+  &.columns2 {
+    @include grid(2, 0);
+  }
+  &.columns3 {
+    @include grid(3, 0);
+  }
+  &.row-gap-0 {
+    row-gap: 0px;
+  }
+  &.col-gap-1 {
+    column-gap: 1rem;
+  }
+}
+
+//for a 6 sized grid
+div.col-3-of-6 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+div.col-1-of-6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    &.columns3 {
+      @include grid(1, 0);
+    }
+  }
+  div.col-3-of-6 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  div.col-1-of-6 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+}

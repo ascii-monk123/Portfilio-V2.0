@@ -1,0 +1,7 @@
+@mixin gradientMaker($startColor, $endColor, $direction) {
+  background-image: linear-gradient(
+    $direction,
+    rgba($startColor, 0.7),
+    rgba($endColor, 0.7)
+  );
+}
