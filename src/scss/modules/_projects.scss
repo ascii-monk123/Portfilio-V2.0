@@ -1,0 +1,81 @@
+@import "./colors";
+.project {
+  margin-top: 15rem;
+}
+.project-image {
+  width: 100%;
+  height: 30rem;
+  z-index: 100;
+  position: relative;
+  transition: transform 0.5s, border 0.3s, filter 0.3s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.3);
+    border: 10px solid $color-blue;
+    filter: invert(0);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: filter 0.5s;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+.projects {
+  margin-top: 8rem;
+
+  a {
+    text-decoration: none;
+    color: $color-blue;
+    transition: color 0.5s;
+    &:hover {
+      color: $color-brown;
+    }
+  }
+  .project-content {
+    padding: 1.5rem;
+    h1 {
+      color: transparent;
+      background-clip: text;
+      font-size: 3.5rem;
+      text-align: justify;
+    }
+    .project-description {
+      font-family: "Montserrat";
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+  }
+}
+@media (max-width: 745px) {
+  .projects {
+    .project-content {
+      margin-top: 4rem;
+      padding-left: 0;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .project {
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 400px) {
+  .project-image {
+    height: 20rem;
+  }
+  .projects {
+    .project-content {
+      margin-top: 4rem;
+      padding: 0;
+      font-size: 1.2rem;
+      margin-bottom: 6rem;
+    }
+  }
+}

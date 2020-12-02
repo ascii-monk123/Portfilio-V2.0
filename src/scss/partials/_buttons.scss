@@ -1,5 +1,6 @@
 @import "../modules/colors";
 .blue-button {
+  text-decoration: none;
   background-color: $color-blue;
   color: $color-white;
   border: 1px solid $color-blue;
@@ -12,8 +13,16 @@
   border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
   transition: all 0.5s;
+  display: inline-block;
+  font-size: 1.2rem;
   &:hover {
     background-color: $color-brown;
     border: 1px solid $color-brown;
   }
 }
+
+@media (max-width: 420px) {
+  .blue-button {
+    padding: 1.2rem 2rem;
+  }
+} ;

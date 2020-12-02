@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "projectTitle": "Lamazon",
+      "projectDesc": "  An e-commerce website made using react.js. Redux is used for efficient state management.Backend and auth is handled by firebase. It's a CRUD application where the admin can manage products .More features will be added to the project in the future.",
+      "projLink": "https://lamazon2.herokuapp.com/",
+      "isLive": true
+    },
+    {
+      "projectTitle": "Light-Sky",
+      "projectDesc": " A weather web app made using react.js/react-router and open weather map api. This web app displays the weather of the location you search and can display 30 days weather forecast too.",
+      "projLink": "http://light-sky-weather.herokuapp.com/",
+      "isLive": true
+    },
+    {
+      "projectTitle": "Covidy",
+      "projectDesc": "It's a covid tracker web app made using react.js and covid 19 Mathdroid api api. It uses chart.js to visualize the covid data acc to the selected region in the form of beautiful graphs.",
+      "projLink": "https://github.com/pokemonTrainer5833/Covid-Tracker",
+      "isLive": false
+    }
+  ]
+}

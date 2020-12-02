@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "./modules/all";
 * {
   margin: 0;
@@ -10,4 +11,25 @@ html {
 }
 body {
   font-family: "Share Tech Mono", monospace;
+}
+.app {
+  position: relative;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-appear {
+  opacity: 1;
+}
+
+.example-appear-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
