@@ -114,8 +114,65 @@
     }
   }
 }
+/*****************************************The services section**************************/
+.services-section {
+  padding-top: 6rem;
+  h1 {
+    text-align: center;
+    color: $color-grey-light;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+  p {
+    text-align: center;
+    color: $color-white;
+    font-size: 1.7rem;
+  }
+  .service-col {
+    width: 100%;
+    height: 30rem;
+    h1 {
+      font-size: 6rem;
+      text-align: justify;
+    }
+    h2 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 2.4rem;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    p {
+      font-size: 1.5rem;
+      text-align: justify;
+      overflow-wrap: break-word;
+      width: 90%;
+    }
+  }
+  .services-grid {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 1.5rem;
+  }
+}
 
+/************ ##### Media queries for the home page ######*****************/
+@media (max-width: 940px) {
+  .services-section {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
 @media (max-width: 760px) {
+  .services-section {
+    .services-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
   .transX {
     transform: translateY(-5rem);
   }
@@ -155,6 +212,11 @@
     }
     p {
       font-size: 1.2rem !important;
+    }
+  }
+  .services-section {
+    p {
+      font-size: 1.4rem;
     }
   }
 }

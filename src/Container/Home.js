@@ -4,6 +4,7 @@ import HeadLogo from "../Component/HeadLogo";
 import BlueBtn from "../Component/UI/BlueBtn";
 import { FaChevronDown } from "react-icons/fa";
 import ProfileImg from "../assets/img/my-image.jpg"; //importing the image
+import { FaCode, FaMobileAlt, FaTeamspeak } from "react-icons/fa";
 
 //styles for the header and the background
 const headStyles = {
@@ -20,7 +21,7 @@ const Home = () => {
         <HeadLogo />
         <div className="home-message">
           <h1>AAHAN SINGH</h1>
-          <h3>{"{Front-End Web Developer}"}</h3>
+          <h3 className="orange-gradient">{"{Front-End Web Developer}"}</h3>
           <p>Html . Css . Javascript . React . Scss</p>
           <div className="button-container">
             <BlueBtn title={"Contact Me"} />
@@ -85,6 +86,55 @@ const Home = () => {
             </div>
             <div className="gradient-hr transX orange-gradient"></div>
           </div>
+        </div>
+      </section>
+      <section className="services-section">
+        <h1>What can I Offer ?</h1>
+        <br />
+        <br />
+        <br />
+        <p>
+          I will provide help you remarkable first impression with simple and
+          clean websites
+        </p>
+        <div className="mt-15">
+          <div className="services-grid">
+            <div className="service-col">
+              <div className="wrapper">
+                <h1>
+                  <FaCode />
+                </h1>
+                <h2 className="orange-gradient">Web Development</h2>
+                <p>
+                  HTML5,CSS3,Javascript,React,Redux,SCSS ,Firebase,C,SQL(Basic)
+                </p>
+              </div>
+            </div>
+            <div className="service-col">
+              <h1>
+                <FaMobileAlt />
+              </h1>
+              <h2 className="orange-gradient">Responsive Design</h2>
+              <p>
+                I can make your website responsive so that it doesnt look ugly
+                at mobile screens
+              </p>
+            </div>
+            <div className="service-col">
+              <h1>
+                <FaTeamspeak />
+              </h1>
+              <h2 className="orange-gradient">Teamwork</h2>
+              <p>
+                I have some experience of working in a team and can communicate
+                well with the team members to make sure the product is
+                satisfactory
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="gradient-hr transX orange-gradient"></div>
         </div>
       </section>
       <section className="services-section"></section>

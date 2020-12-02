@@ -1,6 +1,6 @@
 @import "../mixins/gradients";
 @import "./colors";
-$torightBottom: to right bottom;
+$toright: to right;
 .orange-gradient {
-  @include gradientMaker($color-orange, $color-purple, $torightBottom);
+  @include gradientMaker($color-orange, $color-purple, $toright);
 }
