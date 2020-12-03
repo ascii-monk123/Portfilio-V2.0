@@ -141,8 +141,8 @@ const Home = () => {
         <br />
         <Roll left>
           <p>
-            I will provide help you remarkable first impression with simple and
-            clean websites
+            I will help you create a remarkable first impression with simple and
+            clean websites.
           </p>
         </Roll>
 
@@ -173,8 +173,8 @@ const Home = () => {
               <Zoom bottom>
                 <h2 className="orange-gradient">Responsive Design</h2>
                 <p>
-                  I can make your website responsive so that it doesnt look ugly
-                  at mobile screens
+                  I can make your website responsive so that it doesn't look
+                  ugly on mobile screens.
                 </p>
               </Zoom>
             </div>
@@ -187,9 +187,9 @@ const Home = () => {
               <Zoom bottom>
                 <h2 className="orange-gradient">Teamwork</h2>
                 <p>
-                  I have some experience of working in a team and can
-                  communicate well with the team members to make sure the
-                  product is satisfactory
+                  I have experience of working in teams and can communicate well
+                  with the other team members in order to make sure that the
+                  product is satisfactory.
                 </p>
               </Zoom>
             </div>
@@ -224,8 +224,8 @@ const Home = () => {
           <Fade left>
             <h1>Get in Touch</h1>
             <p>
-              I would love to take to you. Even if it's to say hey, don't
-              hesitate to drop an email
+              I would love to talk to you. Even if it's to say hi, don't
+              hesitate to drop an email.
             </p>
           </Fade>
           <Zoom bottom>
@@ -268,7 +268,7 @@ const Home = () => {
       <footer className="main-footer" id="main-footer">
         <div className="container">
           <Zoom top>
-            <div className="footer-links">
+            <div className="footer-links up-links">
               <Link
                 to="header"
                 spy={true}

@@ -218,6 +218,7 @@
 .main-footer {
   padding-top: 0rem;
   min-height: 23rem;
+
   width: 100%;
   background-color: $color-black-light;
   p {
@@ -229,6 +230,7 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     &.soc-links {
       a {
         font-size: 2rem;
@@ -327,6 +329,15 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       row-gap: 1rem;
+      &.up-links {
+        margin-bottom: 5rem;
+      }
+      &.soc-links {
+        a {
+          text-align: center;
+          margin: 3rem 0 4rem 0;
+        }
+      }
     }
   }
 }
