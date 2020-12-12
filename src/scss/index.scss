@@ -8,9 +8,23 @@
 }
 html {
   font-size: 62.5%;
+  --scrollbarBG: #7ed6df;
+  --scrollbarBG2: #6c5ce7;
+  --thumbBG: #fd79a8;
 }
 body {
   font-family: "Share Tech Mono", monospace;
+  &::-webkit-scrollbar {
+    width: 9px;
+  }
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, var(--thumbBG), var(--scrollbarBG2));
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
 }
 .app {
   position: relative;
