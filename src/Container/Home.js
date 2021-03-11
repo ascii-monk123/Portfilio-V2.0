@@ -333,7 +333,7 @@ const Home = () => {
             <br />
             <div className="footer-links soc-links">
               <a
-                href="https://github.com/pokemonTrainer5833"
+                href="https://github.com/pokemonChampion5833"
                 target="_blank"
                 rel="noreferrer"
               >
